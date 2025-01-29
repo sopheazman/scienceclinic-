@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Science Clinic +</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+      /* Add space at the top of the body */
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background: #F9FAFB; /* Light grey for better readability */
+            color: #0b4738;
+            margin-top: 0px; /* Add space at the top */
+        }
+
+        /* Or adjust header padding to create space */
+        header {
+            background: #0b4738; /* Mauve for navigation */
+            color: white;
+            padding: 60px 30px; /* Increase padding at the top */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #F9FAFB; /* Slightly brighter on hover */
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .hero-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            color: #0b4738;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #555;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .service-item {
+            background: #C4DFE6;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .service-item h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #0b4738;
+        }
+        .service-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .header-top {
+            background: #0b4738; 
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header-top h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+        .footer {
+            background: #0b4738;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #C4DFE6;
+        color:  #0b4738(255, 255, 255);
+        text-decoration: none;
+        font-size: 24px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: none; /* Hidden by default */
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        opacity: 2;
+    }
+
+    #back-to-top:hover {
+        background-color: #C4DFE6;
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <link rel="stylesheet" href="css/style2.css">
+            <script src="script.js" defer></script>
+            <header class="header">
+                <div class="logo">
+                    <img id="logo" src="images/logowhite.png" alt="Logo">
+                    <span class="logo-text">Science Clinic +</span>
+                </div>
+                <audio autoplay loop>
+                    <source src="audio/lofi4.mp3" type="audio/mpeg">
+                </audio>
+    
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About</a>
+                    <a href="testimony.html">Testimony</a>
+                    <a href="#services">Services</a>
+                    <a href="contact.html">Contact</a>
+                </nav.>
+            </header>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <div class="hero-section">
+            <h1>Our Services</h1>
+            <p>Empowering students to achieve excellence through personalized and innovative tuition programs.</p>
+        </div>
+        <div class="services">
+            <div class="service-item">
+                <h2>Primary School Programs</h2>
+                <p>Engaging and interactive lessons for young learners (Darjah 1 to Darjah 6), covering core subjects like Science, Mathematics, and Bahasa Malaysia.</p>
+            </div>
+            <div class="service-item">
+                <h2>Secondary School Mastery</h2>
+                <p>Comprehensive classes for Form 1 to Form 5 students, focusing on subjects such as Physics, Chemistry, Biology, Mathematics, and Additional Mathematics.</p>
+            </div>
+            <div class="service-item">
+                <h2>Exam Excellence Workshops</h2>
+                <p>Intensive preparation sessions for big exam like SPM with practice exams, strategies, and tips to ace standardized tests.</p>
+            </div>
+            <div class="service-item">
+                <h2>STEM Enrichment Programs</h2>
+                <p>Special STEM workshops with hands-on activities, experiments, and problem-solving exercises to foster curiosity and innovation.</p>
+            </div>
+            <div class="service-item">
+                <h2>Personalized One-on-One Coaching</h2>
+                <p>Customized lessons tailored to individual learning styles, helping students strengthen weak areas and excel academically.</p>
+            </div>
+            <div class="service-item">
+                <h2>Flexible Online Classes</h2>
+                <p>Virtual learning options that bring high-quality education to the comfort of your home, complete with interactive sessions and online resources.</p>
+            </div>
+        </div>
+        <br>
+        <div align="center">
+            <h2>OUR VIDEO</h2>
+                <!--embed youtube video-->
+                <iframe width="535" height="326" src="https://www.youtube.com/embed/dSfe15xCYHE" title="Science Clinic + | The Best Tuition Centre in Malaysia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+          <!-- Back to Top Button -->
+          <a href="#top" id="back-to-top">⬆</a>
+
+          <script src="back2top.js"></script>
+  
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Science Clinic+.co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

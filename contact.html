@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Science Clinic +</title>
+    <style>
+         body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+      /* Add space at the top of the body */
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background: #F9FAFB; /* Light grey for better readability */
+            color: #333;
+            margin-top: 0px; /* Add space at the top */
+        }
+
+          /* Or adjust header padding to create space */
+        .header-top {
+            background: #0b4738; /* Emerald green for navigation */
+            color: rgb(5, 4, 4);
+            padding: 60px 30px; /* Increase padding at the top */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .contact-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0b4738;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .contact-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-container label {
+            font-weight: bold;
+            color: #444;
+        }
+
+        .contact-container input,
+        .contact-container textarea,
+        .contact-container select {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+
+        .contact-container input:focus,
+        .contact-container textarea:focus,
+        .contact-container select:focus {
+            border-color: #0b4738;
+            box-shadow: 0 0 5px rgba(255, 111, 97, 0.4);
+            outline: none;
+        }
+
+        .contact-container textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-container button {
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(45deg, #0b4738, #C4DFE6);
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-container button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgb(255, 111, 97, 0.5);
+        }
+
+        .success-message {
+            display: none;
+            background-color: #28a745;
+            color: #fff;
+            padding: 12px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .instagram-link {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .instagram-link a {
+            text-decoration: none;
+            color: #0b4738;
+            font-size: 18px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .instagram-link a:hover {
+            color:#0b4738;
+            transform: scale(1.1);
+        }
+
+        .instagram-link img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .footer {
+    background: #0b4738;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+       }
+       #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #C4DFE6;
+        color:  #0b4738(255, 255, 255);
+        text-decoration: none;
+        font-size: 24px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: none; /* Hidden by default */
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        opacity: 2;
+    }
+
+    #back-to-top:hover {
+        background-color: #C4DFE6;
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+    }
+    </style>
+</head>
+<body>
+
+    <header class="header-top">
+        <nav>
+            <link rel="stylesheet" href="css/style2.css">
+            <script src="script.js" defer></script>
+            <header class="header">
+                <div class="logo">
+                    <img id="logo" src="images/logowhite.png" alt="Logo">
+                    <span class="logo-text">Science Clinic +</span>
+                </div>
+    
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About</a>
+                    <a href="testimony.html">Testimony</a>
+                    <a href="services.html">Services</a>
+                    <a href="#contact">Contact</a>
+                </nav.>
+            </header>
+        </nav>
+    </header>
+
+    <audio autoplay loop>
+        <source src="audio/lofi5.mp3" type="audio/mpeg">
+    </audio>
+<div class="contact-container">
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="telephone">Telephone Number:</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="Your Telephone Number" required>
+
+        <label for="services">Services:</label>
+        <select id="services" name="services" required>
+            <option value="">-- Please Select --</option>
+            <option value="service1">Primary School Programs</option>
+            <option value="service2">Secondary School Mastery</option>
+            <option value="service3">Exam Excellence Workshop</option>
+            <option value="service4">STEM Enrichment Programs</option>
+            <option value="service5">Personalized One-on-one Coaching</option>
+            <option value="service6">Flexible Online Classes</option>
+        </select>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject">
+
+        <label for="message">What can we help you with:</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div id="successMessage" class="success-message">
+        Your message has been successfully sent! Thank you for contacting us.
+    </div>
+
+    <div class="instagram-link">
+        <a href="https://www.instagram.com/scienceclinict?igsh=MnZvMXpzOTFvNjNy&utm_source=qr" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+            Follow us on Instagram
+        </a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Display the success message
+        document.getElementById('successMessage').style.display = 'block';
+
+        // Reset the form after submission
+        document.getElementById('contactForm').reset();
+
+        // Optionally hide the success message after a few seconds
+        setTimeout(function() {
+            document.getElementById('successMessage').style.display = 'none';
+        }, 5000);
+    });
+</script>
+<!-- Back to Top Button -->
+<a href="#top" id="back-to-top">⬆</a>
+
+<script src="back2top.js"></script>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Science Clinic+.co. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

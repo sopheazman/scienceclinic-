@@ -1,0 +1,253 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Science Clinic +</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="home.js" defer></script>
+</head>
+<style>
+    #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #C4DFE6;
+        color:  #0b4738(255, 255, 255);
+        text-decoration: none;
+        font-size: 24px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: none; /* Hidden by default */
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        opacity: 2;
+    }
+
+    #back-to-top:hover {
+        background-color: #C4DFE6;
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+    }
+    #customAlert 
+    {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      visibility: hidden; 
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    #customAlert .alertBox 
+    {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 80%;
+      max-width: 400px;
+    }
+    #customAlert .alertBox h1 
+    {
+      font-size: 1.5rem;
+      color: #333;
+    }
+    #customAlert .alertBox p
+    {
+      font-size: 1rem;
+      color: #666;
+    }
+    #customAlert .alertBox button 
+    {
+      background-color: #0b4738;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 15px;
+      transition: background-color 0.2s ease;
+    }
+    #customAlert .alertBox button:hover 
+    {
+      background-color: #C4DFE6;
+    }
+    #customAlert.show 
+    {
+      visibility: visible;
+      opacity: 1;
+    }
+</style>
+<body>
+    <nav>
+        <link rel="stylesheet" href="css/style2.css">
+        <script src="script.js" defer></script>
+        <header class="header">
+            <div class="logo">
+                <img id="logo" src="images/logowhite.png" alt="Logo">
+                <span class="logo-text">Science Clinic +</span>
+            </div>
+
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="testimony.html">Testimony</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav.>
+        </header>
+    </nav>
+
+    </header>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Science Clinic Plus!</h1>
+            <p>We teach students to become from zero to hero!!!</p>
+            <a href="aboutus.html" class="hero-button">About Us</a>
+        </div>
+        <img src= "images/Studying-1200x600.jpeg" alt="Hero Image" class="hero-image">
+    </header>
+    <div class="home-audio">
+        <audio controls autoplay loop>
+            <source src="audio/lofi1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="find-out-more">
+            <a href="services.html">Find out more</a>
+            <img src="images/arrow_foward.png" alt="Arrow">
+        </div>
+        <div class="carousel">
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <div class="service">
+                        <img src="images/services2.jpg" alt="Service 1">
+                        <h3>Flexible Online Classes</h3>
+                        <p>Virtual learning options that bring high-quality education to the comfort of your home, complete with interactive sessions and online resources.</p>
+                    </div>
+                    <div class="service">
+                        <img src="images/service3.jpg" alt="Service 2">
+                        <h3>Personalized One-on-One Coaching</h3>
+                        <p>Customized lessons tailored to individual learning styles, helping students strengthen weak areas and excel academically.</p>
+                    </div>
+                    <div class="service">
+                        <img src="images/services1.jpg" alt="Service 3">
+                        <h3>Exam Excellence Workshops</h3>
+                        <p>Intensive preparation sessions for big exams like SPM with practice exams, strategies, and tips to ace standardized tests.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-arrow left">&lt;</div>
+            <div class="carousel-arrow right">&gt;</div>
+            <div class="carousel-indicators">
+            <div class="carousel-indicator"></div>
+            <div class="carousel-indicator"></div>
+            <div class="carousel-indicator"></div>
+    </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <h2>What Our Students Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <img src="images/panda.jpg" alt="Student 1">
+                <p>"After join this class, my science got from F to A-!!!"</p>
+                <h4>- Afiq</h4>
+            </div>
+            <div class="testimonial">
+                <img src="images/shah.jpg" alt="Student 2">
+                <p>"This tuition assist me in making exam preparation easily! Now I don't have to cheat anymore!"</p>
+                <h4>- Shah</h4>
+            </div>
+        </section>
+            <section class="control-center bg-dark-blue text-white py-16 px-8">
+                <div class="container mx-auto text-center">
+                  <h2 class="text-5xl font-bold mb-6">"The Start of Something Big"</h2>
+                  <p class="text-lg mb-8">
+                    This is where we start our journey to successful.
+                  </p>
+                  <div class="features-list text-left mx-auto max-w-4xl">
+                    <h3 class="text-2xl font-semibold mb-4 text-yellow-400">What Science Clinic+ will do:</h3>
+                    <br>    
+        
+                    <ul class="list-none space-y-4">
+                      <li class="flex items-start">
+                        <img src="images/checks.png" alt="Check Icon" class="w-6 h-6 mr-4 mt-1">
+                        Ensures all classes using the same syllibus as the school.
+                      </li>
+                      <li class="flex items-start">
+                        <img src="images/checks.png" alt="Check Icon" class="w-6 h-6 mr-4 mt-1">
+                        Provide class link for students and tutors for online classes.
+                      </li>
+                      <li class="flex items-start">
+                        <img src="images/checks.png" alt="Check Icon" class="w-6 h-6 mr-4 mt-1">
+                        Each class will have supervisors to observe the class.
+                      </li>
+                      <li class="flex items-start">
+                        <img src="images/checks.png" alt="Check Icon" class="w-6 h-6 mr-4 mt-1">
+                        Ensures all classes start on time and end on time.
+                      </li>
+                      <li class="flex items-start">
+                        <img src="images/checks.png" alt="Check Icon" class="w-6 h-6 mr-4 mt-1">
+                        The online classes will be recorded for future reference.
+                      </li>
+                      <li class="flex items-start">
+                        <img src="images/checks.png" alt="Check Icon" class="w-6 h-6 mr-4 mt-1">
+                        Addresses immediate issues to ensure smooth class operation.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                    <!-- Back to Top Button -->
+        <a href="#top" id="back-to-top">⬆</a>
+
+        <script src="back2top.js"></script>
+              </section>      
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Science Clinic+.co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="customAlert">
+        <div class="alertBox">
+          <h1>Welcome to Science Clinic+.co.</h1>
+          <p>Click OK to continue</p>
+          <button onclick="closeAlert()">OK</button>
+        </div>
+      </div>
+      <script>
+        // Function to show the custom alert
+        function showAlert() 
+        {
+          document.getElementById('customAlert').classList.add('show');
+        }
+    
+        // Function to close the custom alert
+        function closeAlert() 
+        {
+          document.getElementById('customAlert').classList.remove('show');
+        } 
+        window.onload = showAlert;
+</script>
+</body>
+</html>
+

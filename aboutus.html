@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Science Clinic +</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        /* Top Frame */
+        .top-frame {
+            width: 100%;
+            height: 100px; /* Height for the top frame */
+            background-color: #0b4738; /* dark background */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #0b4738;
+        }
+
+        /* Main Content Layout */
+        .main-content {
+            display: flex;
+            height: calc(100vh - 60px); /* Remaining height after top frame */
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color:#C4DFE6; /* light background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .sidebar h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 12px 20px;
+    margin: 10px 0;
+    width: 90%; /* Slightly less than full width for spacing */
+    text-align: left;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar a:hover {
+    background-color: #6c757d; /* Softer hover background */
+    color: #ffffff;
+    transform: translateX(10px); /* Adds a slide effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+
+        
+
+        /* Content Frame */
+        .content-frame {
+            flex: 1;
+            background-color: #f8f9fa; /* Light background */
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .content-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Frame -->
+    <div class="top-frame">
+        <nav>
+            <link rel="stylesheet" href="css/style2.css">
+            <script src="script.js" defer></script>
+            <header class="header">
+                <div class="logo">
+                    <img src="images/logowhite.png" alt="Logo">
+                    <span class="logo-text">Science Clinic +</span>
+                </div>
+    
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="#about">About</a>
+                    <a href="testimony.html">Testimony</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </nav.>
+            </header>
+        </nav>
+    </div>
+    <audio>
+        <source src="audio/lofi2.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Main Content Layout -->
+    <div class="main-content">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>About Us</h2>
+            <a href="history.html" target="content-frame">History</a>
+            <a href="orgchart.html" target="content-frame">Org Chart</a>
+            <a href="members.html" target="content-frame">Members</a>
+            <a href="vmo.html" target="content-frame">Vision, Mission & Objectives</a>
+        </div>
+
+        <!-- Content Frame -->
+        <div class="content-frame">
+            <iframe name="content-frame" src="history.html"></iframe>
+        </div>
+        
+    </div>
+</body>
+</html>
