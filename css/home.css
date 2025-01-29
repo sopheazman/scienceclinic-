@@ -1,0 +1,389 @@
+/* General Styles */
+body {
+    background: url(image/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    top: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#333;
+}
+
+h1, h2, h3, h4 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.3) for darkness level */
+    z-index: 1; /* Place it behind the text */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #C4DFE6;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.hero-button {
+    padding: 10px 20px;
+    background-color: #C4DFE6;
+    color: #0b4738;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.hero-button:hover {
+    background-color:#C4DFE6;
+}
+
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.home-audio {
+    align-items: center;
+    justify-content: center;
+    margin-left: 530px;
+    margin-top: 10px;
+    height: 2.5rem;
+}
+.home-audio audio {
+    padding: 10px;
+}
+
+/* Services Section */
+.services-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    position: relative; 
+    color: #0b4738;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Centers text and image horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content inside the service container */
+    justify-content: center; /* Ensures vertical centering of the entire content */
+}
+
+.service img {
+    max-width: 80%; /* Adjusts image size to fit nicely */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 10px; /* Adds space below the image */
+}
+
+.service h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 50px 20px;
+    background: #C4DFE6;
+    color: #0b4738;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    max-width: 300px;
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Same as width for a perfect circle */
+    object-fit: cover; /* Ensures the image fills the container */
+    overflow: hidden; /* Hides any overflow */
+    display: block; /* Ensures proper alignment */
+    margin: 0 auto; /* Center the image horizontally */
+
+}
+
+/* Footer Section */
+.footer {
+    background: #0b4738;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Find out more section (top-right) */
+.find-out-more {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.find-out-more a {
+    font-size: 1.2rem;
+    color: #0b4738; /* Blue color for clickable link */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.find-out-more img {
+    width: 20px;
+    height: auto;
+    animation: bounce 1.5s infinite;
+}
+
+/* Arrow Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+    
+}
+
+.service {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.service.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.service img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0b4738;
+    color: #C4DFE6;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-arrow.left {
+    left: 10px;
+}
+
+.carousel-arrow.right {
+    right: 10px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicator.active {
+    background-color: #000;
+}
+
+.control-center {
+    background-color: #1a202c; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 2.5rem 1.25rem; /* Spacing */
+  }
+  
+  .control-center h2 {
+    font-size: 2.25rem; /* Large heading */
+    margin-bottom: 1rem;
+  }
+  
+  .control-center p {
+    font-size: 1.125rem; /* Medium text */
+    margin-bottom: 1.5rem;
+  }
+  
+  .control-center ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 1.5rem; /* Indent */
+  }
+  
+  .control-center ul li {
+    margin-bottom: 0.5rem; /* Space between points */
+  }
+
+/* Background and General Styles */
+.bg-dark-blue {
+    background-color: #ffffff; /* White background */
+    color: #0b4738; /* Emerald green text color */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center align the container */
+  }
+  
+  .py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  /* Heading and Text Styles */
+  .text-5xl {
+    font-size: 3rem; /* Large title font size */
+    font-weight: bold; /* Bold heading */
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem; /* Medium text size */
+    line-height: 1.6;
+  }
+  
+  .text-yellow-400 {
+    color: #facc15; /* Bright yellow for emphasis */
+  }
+  
+  /* Features List Styles */
+  .features-list ul {
+    padding-left: 0; /* Remove default list padding */
+  }
+  
+  .features-list li {
+    display: flex; /* Align icon and text side by side */
+    align-items: flex-start; /* Align text with icon */
+    margin-bottom: 1rem; /* Add space between items */
+  }
+  
+  .features-list li img {
+    width: 24px; /* Set width of the icon */
+    height: 24px; /* Set height of the icon */
+    margin-right: 1rem; /* Space between icon and text */
+    margin-top: 0.25rem; /* Slight adjustment to align icon */
+  }
+  

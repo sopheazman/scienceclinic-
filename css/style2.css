@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    
+        background: none; /* Remove body background */
+    }
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent; /* Default background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: background 0.3s, padding 0.3s; /* Added smooth transition */
+}
+
+/* CHANGED: Added scroll class for header */
+.header.scroll {
+    background: rgba(222, 219, 219, 0.8); /* Dark background when scrolling */
+    padding: 10px 100px; /* Reduced padding */
+}
+
+.header.scroll a {
+    color:#0b4738;
+}
+
+.header.scroll .logo-text{
+    color:#0b4738;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center; /* Ensure logo and text align vertically */
+}
+
+.logo img {
+    max-height: 90px;  /* Adjust logo size */
+    max-width: 90px;   /* Adjust logo size */
+    width: auto;       /* Maintain aspect ratio */
+    height: auto;      /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between logo and text */
+}
+
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #ffffff; /* Adjusted to white for contrast when scrolling */
+    font-weight: 600;
+    line-height: 1.2;  /* Prevent text from moving down */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    top: 90%;
+    position: relative;
+    font-size: 18px;
+    color: #ffffff; /* Default text color */
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: color 0.3s; /* Added smooth transition for hover */
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff; /* Adjusted hover underline to white */
+    transition: width 0.3s;
+}
+
+.navbar a.active {
+    color: #ffffff;  /* Color when the link is active or hovered */
+}
+
+.navbar a:hover:before {
+    width: 100%; /* Underline expands fully on hover */
+}
+
+/* OPTIONAL: Make navbar hidden when scrolling down */
+.navbar.hidden {
+    top: -100px; /* Hide navbar off-screen */
+    transition: top 0.3s;
+}
